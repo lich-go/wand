@@ -1,12 +1,13 @@
 # 使用方法
 
 1、 添加私有库
-```shell script
-go env -w GOPRIVATE=git.cifuwu.net
+```shell
+# 私有库将不通过代理访问
+# go env -w GOPRIVATE=github.com
 ```
 
 2、 安装
-```shell script
+```shell
 go get github.com/lich-go/wand.git
 
 # 或者可以指定`tag`对应的版本号
