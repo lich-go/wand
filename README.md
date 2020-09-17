@@ -8,10 +8,10 @@
 
 2、 安装
 ```shell
-go get github.com/lich-go/wand.git
+go get github.com/lich-go/wand
 
 # 或者可以指定`tag`对应的版本号
-go get github.com/lich-go/wand.git@v1.0.0
+go get github.com/lich-go/wand@v1.0.0
 ```
 3、 参考wiki
 
