@@ -2,6 +2,7 @@ package conv
 
 import (
 	"reflect"
+	"strings"
 )
 
 // StructToMap :
@@ -11,7 +12,7 @@ func StructToMap(obj interface{}) map[string]interface{} {
 	typ := val.Type()
 	var data = make(map[string]interface{})
 	for i := 0; i < typ.NumField(); i++ {
-		data[typ.Field(i).Name] = val.Field(i).Interface()
+		data[strings.ToLower(typ.Field(i).Name)] = val.Field(i).Interface()
 	}
 	return data
 }
